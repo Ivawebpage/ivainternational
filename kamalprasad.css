@@ -1,0 +1,297 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header Section */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Home Section */
+#home {
+    background-color: #005a87;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#home .hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#home .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#home .btn {
+    background-color: #f4b400;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#home .btn:hover {
+    background-color: #e68900;
+}
+
+/* About Us Section */
+#about {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-content p {
+    flex: 1;
+    padding-left: 20px;
+    font-size: 1.1rem;
+}
+
+.ceo-image {
+    max-width: 300px;
+    border-radius: 50%;
+}
+
+/* Services Section */
+#services {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+#services ul {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#services ul li {
+    margin-bottom: 20px;
+}
+
+/* Projects Section */
+#projects {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.project-item p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* Contact Us Section */
+#contact {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+form label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #005a87;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #004a6e;
+}
+
+form p {
+    font-size: 1rem;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-content p {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .ceo-image {
+        margin-bottom: 20px;
+    }
+
+    .project-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #home .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    #home .hero p {
+        font-size: 1rem;
+    }
+
+    #home .btn {
+        padding: 8px 16px;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    form input, form textarea {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .project-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    #home .hero h2 {
+        font-size: 2rem;
+    }
+
+    #home .hero p {
+        font-size: 0.9rem;
+    }
+
+    #home .btn {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    form input, form textarea {
+        padding: 8px;
+    }
+}
